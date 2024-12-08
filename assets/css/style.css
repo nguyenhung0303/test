@@ -25,7 +25,6 @@
 }
 .bgr{
     background-color: var(--bgr);
-    position: relative;
 }
 .inner{
   margin: var(--mgt,0) var(--mgr,0) var(--mgbt,0) var(--mgl,0); 
@@ -52,6 +51,7 @@
 .flex{
     display: flex;
     gap: var(--gap);
+    flex-direction: var(--flex);
 }
 .item-img{
     flex: 1;
@@ -61,12 +61,12 @@
     font-family: "Lato", sans-serif;
 }
 .content{
-    position: absolute;
-    bottom: 44px;
-}
-.content-t{
-    position: absolute;
-    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    box-sizing: border-box;
+    
 }
 .section-one{
     margin-bottom: 80px;
